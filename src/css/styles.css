@@ -23,7 +23,7 @@ header{
 }
 .changing_image{
     width: 100%;
-    height: 100%;
+    height: 20%;
     object-fit: cover;
     margin-bottom:0px;
     padding-bottom: 0px;
