@@ -330,5 +330,18 @@ footer a{
     width: 80%;
     height: 100%;
     z-index: 2;
-    transition: 1s;
+    animation-name: revealTopToBottom;
+    animation-duration: 15s;
 }
+  @keyframes revealTopToBottom {
+    0% {
+      transform: translateY(0); /* Start off-screen at the top */
+      opacity: 0;                   /* Start invisible */
+    }
+    100% {
+      transform: translateY(0);    /* Move to its original position */
+      opacity: 1;                  /* Fully visible */
+    }
+  }
+  /* Apply the animation */
+  
