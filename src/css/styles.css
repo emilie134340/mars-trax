@@ -16,15 +16,12 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.menu{
-    width: 15%;
-    z-index: 1;
-    grid-column: 1/2;
+
+button{
+    border: none;
+    background-color: transparent;
     grid-row: 1/2;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 6%;
-   
+    grid-column: 3/4;
 }
 .changing_image{
     width: 100%;
@@ -46,7 +43,7 @@ header{
     grid-column: 1/4;
     grid-row: 1/2;
     width: 85%;
-    grid-row: 1/2;
+    grid-row: 1/3;
     z-index: 1;
     max-width: 100%;
     padding-left: 0px;
@@ -84,7 +81,7 @@ main{
 }
 #main_changing_image{
     grid-column: 4/5;
-    grid-row:1/5;
+    grid-row: 1/5;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -175,13 +172,34 @@ footer{
     padding-right: 3%;
     padding-left: 3%;
     padding-bottom: 3%;
-    padding-top: 3%;
+    padding-top: 1%;
     grid-column: 1/5;
+}
+.menu-button {
+    background: none;
+    border: none;
+    padding: 3%;
+    cursor: pointer;
+    position: absolute;
+    margin-bottom: 5%;
+    padding-top: 2%;
+    z-index: 300;
+    
+}
+
+/* Style for the menu image */
+.menu-button img {
+    width: 5%;
+    padding-bottom: 5px;
+    padding-left: 90%;
+    z-index: 300;
+
+
 }
 .row-one{
     display:grid;
     display: flex;
-    
+
     grid-column: 1/4;
     grid-row: 3/4;
 }
@@ -344,4 +362,40 @@ footer a{
     }
   }
   /* Apply the animation */
+
+  .hambutton{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    background-color: transparent;
+    z-index: 10000;
+  }
+  .hidden-menu{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    z-index: 1;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-top: 23%;
+    margin-top: 0%;
+    padding-bottom: 0%;
+    text-decoration: none;
+    margin-bottom: 50%;
+    background-color: var(--white); 
+    display: none;
+   
+
+  }
+  .hidden-menu a{
+    color: var(--chestnut);
+    text-decoration: none;
+    padding: 3%;
+    margin-left: 5%;
+    text-align: left;
+    
+  }
   
