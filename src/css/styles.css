@@ -190,7 +190,7 @@ footer{
 /* Style for the menu image */
 .menu-button img {
     width: 5%;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     padding-left: 90%;
     z-index: 300;
 
@@ -199,7 +199,6 @@ footer{
 .row-one{
     display:grid;
     display: flex;
-
     grid-column: 1/4;
     grid-row: 3/4;
 }
@@ -286,7 +285,7 @@ footer a{
 .form-popup {
     display: none;
     position: fixed; /* Fixes the form in place, covering the screen */
-    z-index: 10; /* Ensures it stays above other content */
+    z-index: 3000; /* Ensures it stays above other content */
     left: 0;
     top: 0;
     width: 100%;
@@ -302,45 +301,56 @@ footer a{
     position: fixed;
     max-width: 400px;
     width: 90%; /* Adjust for smaller screens */
-    padding: 20px;
-    background-color: var(--white);
+    padding-top: 5px;
+    padding-left: 10px;
+    background-color: var(--chestnut);
     border-radius: 5px;
     z-index: 11; /* Ensure form container is above the overlay */
 }
 
 .form-container h2 {
     margin-bottom: 15px;
-    color: var(--rich-black);
+    padding-top:0px;
+    color: var(--white);
+    font-size: 2em;
 }
 
 /* Other input and button styling */
+.form-container input[type="name"],
 .form-container input[type="date"],
-.form-container select,
-.form-container .btn {
-    width: 100%;
+.camera,
+.form-container button {
+    display: flex;
+    width: 80%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid var(--light-blue);
-    border-radius: 4px;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .form-container .btn {
     background-color: var(--light-blue);
     color: var(--rich-black);
     cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .form-container .btn:hover {
     text-decoration: underline;
+    background-color: var(--white);
 }
 
 .form-container .cancel {
-    background-color: var(--coral-pink);
+    background-color: var(--white);
     color: var(--rich-black);
-    cursor: pointer;
+    text-align: center;
+    cursor: hand;
 }
 .form-container .cancel:hover {
     text-decoration: underline;
+    background-color: var(--light-blue);
 }
 #traxs{
     grid-column:4/5;
@@ -377,25 +387,68 @@ footer a{
     grid-row: 1/2;
     z-index: 1;
     color: var(--white);
-    display: flex;
-    flex-direction: column;
+    display: none;
     text-align: right;
     padding-top: 23%;
     margin-top: 0%;
     padding-bottom: 0%;
     text-decoration: none;
-    margin-bottom: 50%;
+    margin-bottom: 100%;
+    padding-right: 10%;
+    margin-right: 16%;
+    margin-top: 6%;
     background-color: var(--white); 
-    display: none;
-   
-
+    
   }
   .hidden-menu a{
     color: var(--chestnut);
     text-decoration: none;
-    padding: 3%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
     margin-left: 5%;
     text-align: left;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 0%;
+
     
   }
-  
+  .open{
+    display: block;
+  }
+  #camera{
+    width: 85%;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-left: 8%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+
+  }
+  #form_traxs{
+    width: 100%;
+    animation-name: revealTopToBottom;
+    animation-duration: 15s;
+    padding: 0%;
+    margin: 0%;
+
+  }
+
+#welcome{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: var(--white);
+    margin-top: 5%;
+    margin-left: 20%;
+    z-index: 200;
+    font-size: 1.5em;
+    font-weight: regular;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+
+}
+label{
+    color: var(--white);
+}
