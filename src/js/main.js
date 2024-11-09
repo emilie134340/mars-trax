@@ -6,21 +6,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Show popup form
     formButton.addEventListener('click', () => {
-        popupForm.style.display = 'block';
+        popupForm.style.display = 'flex';
         popupForm.setAttribute('aria-hidden', 'false');
     });
 
     // Close popup form
-    closeForm.addEventListener('click', () => {
-        popupForm.style.display = 'none';
-        popupForm.setAttribute('aria-hidden', 'true');
-    });
+    closeForm.addEventListener('click', closePopup);
 
     // Close form when clicking outside of it
     window.addEventListener('click', (event) => {
         if (event.target === popupForm) {
-            popupForm.style.display = 'none';
-            popupForm.setAttribute('aria-hidden', 'true');
+            closePopup();
+        }
+    });
+
+    // Close form with Escape key
+    window.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closePopup();
         }
     });
 
@@ -47,4 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const redirectUrl = `findaphoto.html?date=${dateInput}&camera=${cameraInput}`;
         window.location.href = redirectUrl;
     });
+
+    // Function to close popup
+    function closePopup() {
+        popupForm.style.display = 'none';
+        popupForm.setAttribute('aria-hidden', 'true');
+    }
 });
