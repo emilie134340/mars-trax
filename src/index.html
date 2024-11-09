@@ -6,11 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/button.js"></script>
 </head>
 <body>
     <header>
         
         <img class="changing_image" src="images/changingphotoexample.jpg">
+        <h2 id="welcome">Welcome, Guest!</h2>
         <button class="menu-button" onclick="menuFunction()">
             <img src="images/menubutton-01.png" alt="Menu Button">
         </button>
@@ -30,7 +32,8 @@
         <div id="popupForm" class="form-popup" role="dialog" aria-labelledby="formTitle" aria-modal="true" aria-hidden="true">
             <form id="marsImageForm" class="form-container" action="findaphoto.html" method="GET">
                 <h2 id="formTitle">Find an Image</h2>
-
+                <label for="name"><b>Your Name</b></label>
+                <input type="name" id="name" name="name" required aria-required="true">
                 <label for="date"><b>Date</b></label>
                 <input type="date" id="date" name="date" required aria-required="true">
 
@@ -48,6 +51,7 @@
 
                 <button type="submit" class="btn">Submit</button>
                 <button type="button" class="btn cancel" id="closeForm">Close</button>
+                <img id="form_traxs"  src="images/x-traxs-04.png">
             </form>
         </div>
         </div>

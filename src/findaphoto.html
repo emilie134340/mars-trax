@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/button.js"></script>
 </head>
 <body>
-    <img class="changing_image" src="images/changingphotoexample.jpg">
     <header>
+        
+        <img class="changing_image" src="images/changingphotoexample.jpg">
+        <h2 id="welcome">Welcome, Guest!</h2>
+        <button class="menu-button" onclick="menuFunction()">
+            <img src="images/menubutton-01.png" alt="Menu Button">
+        </button>
+        <div class="hidden-menu">
+            <a href="index.html"> Home Page</a>
+            <a href="findaphoto.html"> Find an Image</a>
+        </div>
         <img class="logo" src="images/marstraxlogo-01.png">
     </header>
     <!-- <main>
