@@ -291,7 +291,6 @@ footer a{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    /* display: flex; */
     align-items: center;
     justify-content: center;
 }
