@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 function displayPhotos(photos) {
     const resultsContainer = document.getElementById('marsPhotoResults');
     resultsContainer.innerHTML = ''; // Clear any previous results
+    
 
     photos.forEach((photo) => {
         // Create an image element for each photo
@@ -48,8 +49,17 @@ function displayPhotos(photos) {
         imgElement.src = photo.img_src;
         imgElement.alt = `Mars photo taken by ${photo.camera.full_name} on ${photo.earth_date}`;
         imgElement.classList.add('mars-photo'); // Optional: Add a CSS class for styling
+        imgElement.classList.add('gallery-item');
 
         // Append the image element to the results container
         resultsContainer.appendChild(imgElement);
+        
+        document.getElementById('photo_camera').innerHTML = `${photo.camera.full_name}`;
+        document.getElementById('dates').innerHTML = `${photo.earth_date}`;
+        
+
     });
+    
+    
 }
+
