@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mars-Trax Photos</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script type="module" src="js/main.js"></script>
     <script type="module" src="js/button.js"></script>
+    <script type="module" src="js/findaphoto.js"></script>
 </head>
 <body>
     <header>
-        
         <img class="changing_image" src="images/changingphotoexample.jpg">
         <h2 id="welcome">Welcome, Guest!</h2>
         <button class="menu-button" onclick="menuFunction()">
@@ -22,39 +22,14 @@
         </div>
         <img class="logo" src="images/marstraxlogo-01.png">
     </header>
-    <!-- <main>
-        <img class="changing_image" id="main_changing_image" src="images/changingphotoexample.jpg">
         <div class="find_a_image_area">
-            <h2 id="index_h2">Images of Mars</h2>
-             <button class="center" id="form_button">Find a Image</button>
+        <button class="open-button" id="form_button">Find an Image</button>
+        <div id="formContainer"></div>
         </div>
-        <div class="filterandtitle">
-            <img class="filter" src="images/filterimage.png">
-            <h4 class="filter_text">Mars Rover in 2016</h4>
-        </div>
-        <div id="marsPhotoResults" class="photo-results"></div>
-        <div class="image_garllery">
-           
-            <div class="row-one">
-                <img class="search_image" src="images/mars_rover_example.webp">
-                <img class="search_image" src="images/mars_rover_example.webp">
-                <img class="search_image" src="images/mars_rover_example.webp">
-            </div>
-            <div class="row-two">
-                <img class="search_image" src="images/mars_rover_example.webp">
-                <img class="search_image" src="images/mars_rover_example.webp">
-                <img class="search_image" src="images/mars_rover_example.webp">
-            </div>
-        </div> -->
         <h2>Images of Mars</h2>
         <div id="marsPhotoResults">
             <!-- Photos will be displayed here -->
         </div>
-
-        <script src="js/findaphoto.js"></script>
-
-        
-    </main>
     <footer>
         <div class="footer_text">
             <p>Mars Trax </p>

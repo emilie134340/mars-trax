@@ -20,7 +20,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Check if there are photos in the response
         if (data.photos.length === 0) {
-            document.getElementById('marsPhotoResults').innerHTML = `<p>No photos available for this date and camera.</p>`;
+            document.getElementById('marsPhotoResults').innerHTML = `<p>No photos available for this date and camera. Here are some ideas for dates and cameras that have fun puctures: </p>
+            <ul>
+            <li>May 11, 2016 and the Mars Hand Lens Imager - If you scroll through the pictures, you'll see a fun Curiosity Rover selfie</li>
+            <li>November 16, 2021 and the Navigation Camera - just some cool rocks</li>
+            <li>November 20, 2021 and the Mars Hand Lens Imager - This camera is cool because it takes pictures in color vs black and white, this specific date has more cute Curiosity selfies</li>
+            <li>January 14, 2015 and the Mars Hand Lens Imager - Some HD pictures of Mars and Curiosity (there's so many, they might take a minute to load!)</li>`;
             return;
         }
 

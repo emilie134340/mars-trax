@@ -1,4 +1,10 @@
+import { injectForm } from './formTemplate.js';
+
 document.addEventListener('DOMContentLoaded', () => {
+    // Inject the form into the container
+    injectForm('formContainer');
+
+    // Dynamically assign elements after form injection
     const formButton = document.getElementById('form_button');
     const popupForm = document.getElementById('popupForm');
     const closeForm = document.getElementById('closeForm');
