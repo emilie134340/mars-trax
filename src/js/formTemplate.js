@@ -16,8 +16,8 @@ export function injectForm(containerId) {
             <li>Playing around with the camera options just in case your first try doesn't work.</li>
         </ul>
     </div>
-        <label for="name"><b>Your Name</b></label>
-        <input type="name" id="name" name="name" required aria-required="true">
+        <label for="name" id="your_name"><b>Your Name</b></label>
+        <input type="name" id="name" name="name" aria-required="true">
         <label for="date"><b>Date</b></label>
         <input type="date" id="date" name="date" required aria-required="true">
 
@@ -41,3 +41,6 @@ export function injectForm(containerId) {
 </div>
     `;
 }
+
+
+
