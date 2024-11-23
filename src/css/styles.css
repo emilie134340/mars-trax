@@ -278,7 +278,9 @@ footer a{
     
 
 
-
+.image_message{
+    color: var(--white);
+}
 
 
 /* Popup form background */
