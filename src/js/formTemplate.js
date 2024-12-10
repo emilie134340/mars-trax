@@ -35,7 +35,7 @@ export function injectForm(containerId) {
 
         <button type="submit" class="btn">Submit</button>
         <button type="button" class="btn cancel" id="closeForm">Close</button>
-        <img id="form_traxs"  src="images/x-traxs-04.png">
+        <img id="form_traxs"  src="images/marstraxlogo-01.png">
     </form>
 </div>
 </div>
