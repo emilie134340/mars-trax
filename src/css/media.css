@@ -1,0 +1,29 @@
+@media screen and (max-width: 600px) {
+    #index_h2{
+        font-size:2em;
+    }
+    #form_button{
+        font-size: 1em;
+        margin-bottom: 3%;
+    }
+    #index_h3{
+        font-size: 1.5em;
+
+    }
+    .daily_mars_info{
+        font-size: .8em;
+        margin-top: 2%;
+    }
+    .footer_logo{
+        min-width: 30%;
+        max-width: 60%;
+    }
+    .footer_text{
+        font-size: .5em;
+    }
+    .filter_text{
+        font-size: 1.5em;
+    }
+    
+
+}
