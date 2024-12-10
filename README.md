@@ -1,1 +1,19 @@
 # mars-trax
+- At least one detailed, validated form
+  - This form is on the Home and Find a Photo pages. It validates by not letting the user input a date before August 6, 2012. Users must also fill out all of the fields.
+- Local storage for persistence
+  - We store the user's name after asking for it in the form. 
+- Fetching data from an API or json file.
+  - We get photos from the Mars Rover API from NASA.
+- Drop-down menu
+  - We have a drop-down navigation menu.
+- CSS Animation
+  - We have Curiosity rover tracks that gradually appear over time on the side of the home page and in the form. 
+- Responsive design
+  - It adjusts for mobile screens.
+- Good user experience (UX) and accessibility
+  - We made sure our color combinations, uses of ARIA, and forms are accessible. 
+- URL parameters (data that is passed from page to page in an app through the URL, for example https://example.com/page2.html?id=34 Send the id of 34 to the code running at page2.html)
+  - Users can change the date they searched for and the camera they chose from the URL.
+- Use of modules for organization
+  - We have a form template and a header footer template. 
