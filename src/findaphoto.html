@@ -1,57 +1,114 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mars-Trax Photos</title>
+
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
     <link rel="stylesheet" type="text/css" href="css/media.css" />
+
     <script type="module" src="js/main.js"></script>
+
     <script type="module" src="js/findaphoto.js"></script>
+
 </head>
+
 <body>
+
     <header>
+
         <h2 class="welcome">Welcome Guest!</h2>
+
         <img id="header_changing_image" class="changing_image" src="images/changingphotoexample.jpg">
+
         
+
         <button class="menu-button" onclick="menuFunction()">
+
             <img src="images/menubutton-01.png" alt="Menu Button">
+
         </button>
+
         <div class="hidden-menu">
+
             <a href="index.html"> Home Page</a>
+
             <a href="findaphoto.html"> Find an Image</a>
+
         </div>
+
         <img class="logo" src="images/marstraxlogo-01.png">
+
     </header>
+
     <main class="find_an_image_main">
+
         <img class="changing_image" id="main_changing_image" src="images/changingphotoexample.jpg">
+
         <img id="traxs"  src="images/traxs-03.png">
+
         <div class="find_a_image_area">
+
         <button class="open-button" id="form_button">Find an Image</button>
+
         <div id="formContainer"></div>
+
         </div>
+
         <div class="results-area">
+
         <div class="info">
+
             <h2>Curiosity Rover</h2>
+
             <h4>Date</h4>
+
             <p id="dates">N/A</p>
+
             <h4>Camera</h4>
+
             <p id="photo_camera">N/A</p>
+
         </div>
+
         <div id="marsPhotoResults">
+
             <!-- Photos will be displayed here -->
+
         </div>
+
     </div>
+
     </main>
+
     <footer>
+
         <div class="footer_text">
+
             <p>Mars Trax </p>
+
             <p>Email: Marstrax@gmail.com</p>
+
             <a href="index.html"> Home Page</a>
+
             <a href="findaphoto.html"> Find an Image</a>
+
         </div>
+
         <img class="footer_logo" src="images/marstraxlogo-01.png">
 
+
+
     </footer>
+
 </body>
+
 </html>

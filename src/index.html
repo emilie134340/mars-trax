@@ -1,70 +1,151 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mars-Trax Home</title>
+
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
     <link rel="stylesheet" type="text/css" href="css/media.css" />
+
     <script type="module" src="js/main.js"></script>
+
     
+
 </head>
+
 <body>
+
     <header>
+
         <h2 class="welcome">Welcome Guest!</h2>
+
         <img id="header_changing_image" class="changing_image" src="images/changingphotoexample.jpg">
+
         <button class="menu-button" onclick="menuFunction()">
+
             <img src="images/menubutton-01.png" alt="Menu Button">
+
         </button>
+
         <div class="hidden-menu">
+
             <a href="index.html"> Home Page</a>
+
             <a href="findaphoto.html"> Find an Image</a>
+
         </div>
+
         <img class="logo" src="images/marstraxlogo-01.png">
+
     </header>
+
     <main>
+
         <img class="changing_image" id="main_changing_image" src="images/changingphotoexample.jpg">
+
         <img id="traxs"  src="images/traxs-03.png">
+
         <div class="find_a_image_area">
+
             <h2 id="index_h2">Images of Mars</h2>
+
              <button class="open-button" id="form_button">Find an Image</button>
+
             <!-- Popup form structure imported from template now -->
+
             <div id="formContainer"></div>
+
             <!-- <div class="image_of_the_day">
+
                 <h3 id="index_h3">First Selfie On Mars</h3>
 
+
+
                 <img id="daily_mars_rover_image" src="images/2016-5-11-mahli.jpg">
+
                 <div class="daily_mars_info">
+
                     <h2 class="daily_mars_info">Date</h2>
+
                     <p class="daily_mars_info">9-7-2012</p>
+
                     <h2 class="daily_mars_info">Rover</h2>
+
                     <p class="daily_mars_info">Curiosity</p>
+
                     <h2 class="daily_mars_info">Camera</h2>
+
                     <p class="daily_mars_info">Mars Hand Lens Imager</p>
+
                 </div>
+
             </div> -->
-<div>
+
+<div class="first_selfie">
+
 <h3 id="index_h3">First Selfie On Mars</h3>
+
 <img id="daily_mars_rover_image" src="images/2016-5-11-mahli.jpg">
+
 <div class="daily_mars_info">
-    <h2 class="daily_mars_info">Date</h2>
-    <p class="daily_mars_info">9-7-2012</p>
-    <h2 class="daily_mars_info">Rover</h2>
-    <p class="daily_mars_info">Curiosity</p>
-    <h2 class="daily_mars_info">Camera</h2>
-    <p class="daily_mars_info">Mars Hand Lens Imager</p>
+
+    <div class="small_info">
+
+        <h2 >Date</h2>
+
+        <p>9-7-2012</p>
+
+    </div>
+
+    <div class="small_info">
+
+        <h2 >Rover</h2>
+
+        <p>Curiosity</p>
+
+    </div>
+
+    <div class="small_info">
+
+        <h2>Camera</h2>
+
+        <p>Mars Hand Lens Imager</p>
+
+    </div>
+
 </div>
+
 </div>
+
     
+
     </main>
+
     <footer>
+
         <div class="footer_text">
+
             <p>Mars Trax </p>
+
             <p>Email: Marstrax@gmail.com</p>
+
             <a href="index.html"> Home Page</a>
+
             <a href="findaphoto.html"> Find an Image</a>
+
         </div>
+
         <img class="footer_logo" src="images/marstraxlogo-01.png">
+
     </footer>
+
 </body>
+
 </html>
