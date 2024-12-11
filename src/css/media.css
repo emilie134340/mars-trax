@@ -24,6 +24,60 @@
     .filter_text{
         font-size: 1.5em;
     }
-    
+
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: var(--rich-black);
+    }
+
+    .logo {
+        max-width: 80%;
+        margin: 10px auto;
+        padding: 5%;
+        position: absolute;
+        top: 75px;
+    }
+
+    .menu-button img {
+        display: flex;
+        width: 40px;
+        margin: 5px auto;
+        position: absolute;
+        padding: 3%;
+    }
+
+    #header_changing_image{
+        display: none;
+    }
+    .hidden-menu {
+        z-index: 400;
+        position: absolute;
+        top: 7%;
+        display: none;
+    }
+    .open{
+        display: block;
+      }
+
+    .find_an_image_main{
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 0.5fr;
+        grid-template-rows: 0.1fr 1fr;
+        column-gap: 5%;
+    }
+
+    .info{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        margin-left: 20px;
+    }
+    .marsPhotoResults{
+        margin-left: 20px;
+        grid-column: 2/4;
+        grid-row: auto;
+    } 
+
 
 }
